@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light-dark mode</title>
+    <style>
+        .container{
+            border: 5px solid rgb(5, 159, 220);
+            padding: 5px;
+            border-radius: 10px;
+            width: 250px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+        .container-dark{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+           
+        }
+        .container-light{
+            background-color: white;
+            color: black;
+           
+          
+         }
+         .d-block{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+         }
+         .btn{
+            margin-top: 10px;
+            background-color:black;
+            color: white;
+            font-size: 30px;
+            padding-left: 30px;
+            border-radius: 10px;
+            padding-right: 30px;
+         }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container" id="box">
+        hi i am shweta
+        
+    </div>
+    <br/><br/>
+    <button  onclick="changemode('dark')">Dark</button>
+    <button  onclick="changemode('light')">Light</button>
+
+    <script>
+        function changemode(thememode)
+        {
+            const theme = document.getElementById("box");
+            theme.className = `container container-${thememode}`;
+        } -->
+    
+    <div class="container" id="box">
+       <h1>hey i'm Doremon</h1><br/>
+        <img src="./images/doremon.png" height="200px" class="d-block" id="image"/>
+    </div>
+       <br/><br/>
+    <button onclick="changetheme('dark')" class="d-block btn">Dark</button>
+    <button onclick="changetheme('light')" class="d-block btn">Light</button>
+
+    <script>
+        function changetheme(thememode)
+        {
+            const theme = document.getElementById("box");
+            theme.className = `container container-${thememode}`;
+        }
+   
+    
+
+    </script>
+
+
+</body>
+</html>
